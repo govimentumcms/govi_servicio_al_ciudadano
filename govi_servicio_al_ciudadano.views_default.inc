@@ -39,11 +39,19 @@ function govi_servicio_al_ciudadano_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_type'] = '0';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
   /* Field: Content: Banner */
   $handler->display->display_options['fields']['field_servicio_banner']['id'] = 'field_servicio_banner';
   $handler->display->display_options['fields']['field_servicio_banner']['table'] = 'field_data_field_servicio_banner';
   $handler->display->display_options['fields']['field_servicio_banner']['field'] = 'field_servicio_banner';
   $handler->display->display_options['fields']['field_servicio_banner']['label'] = '';
+  $handler->display->display_options['fields']['field_servicio_banner']['element_type'] = '0';
   $handler->display->display_options['fields']['field_servicio_banner']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_servicio_banner']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_servicio_banner']['settings'] = array(
@@ -57,6 +65,7 @@ function govi_servicio_al_ciudadano_views_default_views() {
   $handler->display->display_options['fields']['field_servicio_enlace']['label'] = '';
   $handler->display->display_options['fields']['field_servicio_enlace']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_servicio_enlace']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_servicio_enlace']['type'] = 'link_plain';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
