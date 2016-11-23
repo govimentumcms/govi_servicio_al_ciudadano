@@ -287,6 +287,43 @@ function govi_servicio_al_ciudadano_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-sdqs_logs-field_sdqs_log_count'.
+  $field_instances['node-sdqs_logs-field_sdqs_log_count'] = array(
+    'bundle' => 'sdqs_logs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'serial',
+        'settings' => array(),
+        'type' => 'serial_formatter_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sdqs_log_count',
+    'label' => 'Log incremental count',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'serial',
+      'settings' => array(),
+      'type' => 'serial_widget_default',
+      'weight' => 31,
+    ),
+  );
+
   // Exported field_instance: 'node-sdqs_logs-field_sdqs_numero'.
   $field_instances['node-sdqs_logs-field_sdqs_numero'] = array(
     'bundle' => 'sdqs_logs',
@@ -379,6 +416,7 @@ function govi_servicio_al_ciudadano_field_default_field_instances() {
   t('Enlace');
   t('Fecha radicación');
   t('Identificación peticionario');
+  t('Log incremental count');
   t('Número SDQS');
   t('Tipo identificación');
 

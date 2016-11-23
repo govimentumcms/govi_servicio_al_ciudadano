@@ -23,8 +23,8 @@ function govi_servicio_al_ciudadano_field_group_info() {
     'label' => 'Respuesta',
     'weight' => '3',
     'children' => array(
-      0 => 'field_sdqs_numero',
-      1 => 'field_sdqs_codigo_respuesta',
+      0 => 'field_sdqs_codigo_respuesta',
+      1 => 'field_sdqs_numero',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -52,8 +52,8 @@ function govi_servicio_al_ciudadano_field_group_info() {
     'label' => 'Solicitud',
     'weight' => '2',
     'children' => array(
-      0 => 'field_sdqs_fecha_radicacion',
-      1 => 'field_sdqs_correo_peticionario',
+      0 => 'field_sdqs_correo_peticionario',
+      1 => 'field_sdqs_fecha_radicacion',
       2 => 'field_sdqs_id_peticionario',
       3 => 'field_sdqs_tipo_id',
     ),
